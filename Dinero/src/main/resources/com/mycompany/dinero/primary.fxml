@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="420.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dinero.PrimaryController">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" text="Dinero:" />
+      <TextField fx:id="txtDinero" alignment="CENTER_RIGHT" layoutX="80.0" layoutY="25.0" prefWidth="100.0" />
+      <Button layoutX="190.0" layoutY="25.0" onAction="#btnLimpiarInput_click" text="X" />
+      <Button layoutX="230.0" layoutY="25.0" onAction="#btnDesglosar_click" text="Desglosar" />
+
+      <VBox layoutX="30.0" layoutY="80.0" spacing="8.0">
+         <children>
+            <Label text="Billetes de $500" />
+            <Label text="Billetes de $200" />
+            <Label text="Billetes de $100" />
+            <Label text="Billetes de $50" />
+            <Label text="Billetes de $20" />
+            <Label text="Monedas de $10" />
+            <Label text="Monedas de $5" />
+            <Label text="Monedas de $2" />
+            <Label text="Monedas de $1" />
+         </children>
+      </VBox>
+
+      <VBox layoutX="200.0" layoutY="80.0" spacing="8.0">
+         <children>
+            <Label fx:id="lbl500" text="0" />
+            <Label fx:id="lbl200" text="0" />
+            <Label fx:id="lbl100" text="0" />
+            <Label fx:id="lbl50" text="0" />
+            <Label fx:id="lbl20" text="0" />
+            <Label fx:id="lbl10" text="0" />
+            <Label fx:id="lbl5" text="0" />
+            <Label fx:id="lbl2" text="0" />
+            <Label fx:id="lbl1" text="0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
