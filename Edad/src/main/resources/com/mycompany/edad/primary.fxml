@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.edad.PrimaryController">
+   <children>
+      <Label layoutX="40.0" layoutY="40.0" text="Fecha de nacimiento" />
+      <TextField fx:id="txtFechaNacimiento" layoutX="175.0" layoutY="35.0" prefWidth="150.0" promptText="dd/mm/aaaa" />
+      <Button layoutX="40.0" layoutY="90.0" onAction="#btnCalcular_click" prefWidth="90.0" text="Calcular" />
+      <Button layoutX="145.0" layoutY="90.0" onAction="#btnLimpiar_click" prefWidth="90.0" text="Limpiar" />
+      <Label fx:id="lblResultado" layoutX="40.0" layoutY="160.0" />
+   </children>
+</AnchorPane>
