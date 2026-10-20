@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.tabla.PrimaryController">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" text="Tabla del:" />
+      <TextField fx:id="txtNumero" alignment="CENTER" layoutX="30.0" layoutY="60.0" prefHeight="40.0" prefWidth="60.0" />
+      <Button layoutX="130.0" layoutY="30.0" onAction="#btnCalcular_click" prefWidth="170.0" text="Calcular" />
+      <Button layoutX="130.0" layoutY="70.0" onAction="#btnLimpiar_click" prefWidth="170.0" text="Limpiar" />
+      <TextArea fx:id="txtTabla" layoutX="30.0" layoutY="120.0" prefHeight="240.0" prefWidth="270.0" />
+   </children>
+</AnchorPane>
